@@ -250,7 +250,7 @@ button#ot-sdk-btn:focus, button#ot-sdk-btn:hover
 			<li class="prereq immediate">Immediate prerequisite</li>
 			<li class="coreq">Some of these prerequisites</li>
 			<li class="postreq">Post-requisite course sequence</li>
-			<li class="degree">Degree core units</li>
+			<li class="degreereq">Degree core units</li>
 		</ul>
 	</div>
 	<div class="table_container">
@@ -282,125 +282,131 @@ button#ot-sdk-btn:focus, button#ot-sdk-btn:hover
 				<tbody>
 					<tr>
 					<td id="sem0" data-semester="0">
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-co="CITS2XXX CITS1003 CITS1402 CITS2002 CITS2200 CITS2211 CITS3001 CITS3002 CITS3200 CITS3403" data-pre="" data-label="BSC CS" data-id="bsccs" data-course-id="bsccs" data-content="" data-post=""></div>
+					<div class="item course" data-name="BSc Computer Science" data-credits-min="" data-credits-max="" data-co="" data-degree="CITS2XXX CITS1003 CITS1402 CITS2002 CITS2200 CITS2211 CITS3001 CITS3002 CITS3200 CITS3403" data-pre="" data-label="BSC CS" data-id="computer-science" data-course-id="bsccs" data-content="" data-post=""></div>
 					
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-pre="" data-label="BSC DS" data-id="bscds" data-course-id="bscds" data-content="" data-post="" data-co="CITS1401 CITS1402 PHIL1001 STAT1400 CITS2402 STAT2401 STAT2402 CITS3200 CITS3401 CITS3403 STAT3064 STAT3405"></div>
+					<div class="item course" data-name="BSc Data Science" data-credits-min="" data-credits-max="" data-pre="" data-label="BSC DS" data-id="data-science" data-course-id="bscds" data-content="" data-post="" data-co="" data-degree="CITS1401 CITS1402 PHIL1001 STAT1400 CITS2402 STAT2401 STAT2402 CITS3200 CITS3401 CITS3403 STAT3064 STAT3405"></div>
 					
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-pre="" data-label="BSC Cyber" data-id="bsccyber" data-course-id="bsccyber" data-content="" data-post="" data-co="CITS2XXX CITS1003 PHIL1001 CITS2002 CITS2003 CITS3002 CITS3006 CITS3007 CITS3200 CITS3403"></div>
+					<div class="item course" data-name="BSc Cybersecurity" data-credits-min="" data-credits-max="" data-pre="" data-label="BSC Cyber" data-id="cybersecurity" data-course-id="bsccyber" data-content="" data-post="" data-co="" data-degree="CITS2XXX CITS1003 PHIL1001 CITS2002 CITS2003 CITS3002 CITS3006 CITS3007 CITS3200 CITS3403"></div>
 					
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-pre="" data-label="BACS Cyber" data-id="bacscyber" data-course-id="bacscyber" data-content="" data-post="" data-co="CITS2XXX CITS1003 CITS1402 CITS2211 PHIL1001 POLS1102 CITS2002 CITS2003 CITS2200 CITS3001 POLS2214 CITS3002 CITS3006 CITS3007 CITS3200 CITS3403 CITS4401 CITS4010 CITS4011 CITS4403 CITS4419"></div>
+					<div class="item course" data-name="BACS International Cybersecurity" data-credits-min="" data-credits-max="" data-pre="" data-label="BACS Cyber" data-id="international-cybersecurity" data-course-id="bacscyber" data-content="" data-post="" data-co="" data-degree="CITS2XXX CITS1003 CITS1402 CITS2211 PHIL1001 POLS1102 CITS2002 CITS2003 CITS2200 CITS3001 POLS2214 CITS3002 CITS3006 CITS3007 CITS3200 CITS3403 CITS4401 CITS4010 CITS4011 CITS4403 CITS4419"></div>
 					
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-pre="" data-label="BACS CDS" data-id="bacscds" data-course-id="bacscds" data-content="" data-post="" data-co="CITS2XXX CITS1003 CITS1401 CITS1402 PHIL1001 STAT1400 CITS2002 CITS2200 CITS2402 STAT2401 STAT2402 CITS3001 CITS3002 CITS3200 CITS3401 CITS3403 STAT3064 STAT3401 CITS4010 CITS4011 CITS5503 CITS5508 STAT4062 STAT4066"></div>
+					<div class="item course" data-name="BACS Computing and Data Science" data-credits-min="" data-credits-max="" data-pre="" data-label="BACS CDS" data-id="computing-and-data-science" data-course-id="bacscds" data-content="" data-post="" data-co="" data-degree="CITS2XXX CITS1003 CITS1401 CITS1402 PHIL1001 STAT1400 CITS2002 CITS2200 CITS2402 STAT2401 STAT2402 CITS3001 CITS3002 CITS3200 CITS3401 CITS3403 STAT3064 STAT3401 CITS4010 CITS4011 CITS5503 CITS5508 STAT4062 STAT4066"></div>
 					
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-pre="" data-label="BACS AI" data-id="bacsai" data-course-id="bacsai" data-content="" data-post="" data-co="CITS2XXX CITS1003 CITS1401 CITS1402 CITS2002 PHIL1001 CITS2200 CITS2211 CITS3001 CITS3002 PHIL2008 CITS3005 CITS3007 CITS3200 CITS3403 CITS4402 CITS4403 CITS4010 CITS4011 CITS4012 CITS4404 CITS5017 CITS5508"></div>
+					<div class="item course" data-name="BACS Artificial Intelligence" data-credits-min="" data-credits-max="" data-pre="" data-label="BACS AI" data-id="artificial-intelligence" data-course-id="bacsai" data-content="" data-post="" data-co="" data-degree="CITS2XXX CITS1003 CITS1401 CITS1402 CITS2002 PHIL1001 CITS2200 CITS2211 CITS3001 CITS3002 PHIL2008 CITS3005 CITS3007 CITS3200 CITS3403 CITS4402 CITS4403 CITS4010 CITS4011 CITS4012 CITS4404 CITS5017 CITS5508"></div>
 					
-					<div class="item course" data-name="" data-credits-min="" data-credits-max="" data-pre="" data-label="BE(HON) SW" data-id="besw" data-course-id="besw" data-content="" data-post="" data-co="CITS2XXX CITS1003 CITS1402 CITS2002 CITS2200 CITS2211 CITS2401 CITS3002 CITS3005 CITS3007 CITS3200 CITS3201 CITS3403 CITS4419 CITS5501 CITS5503 CITS5507"></div>
+					<div class="item course" data-name="BE(Hon) Software Engineering" data-credits-min="" data-credits-max="" data-pre="" data-label="BE(HON) SW" data-id="software-engineering" data-course-id="besw" data-content="" data-post="" data-co="" data-degree="CITS2XXX CITS1003 CITS1402 CITS2002 CITS2200 CITS2211 CITS2401 CITS3002 CITS3005 CITS3007 CITS3200 CITS3201 CITS3403 CITS4419 CITS5501 CITS5503 CITS5507"></div>
 				
 					</td>
 					<td id="sem1" data-semester="1">
 					
 					<div class="item course" data-name="CITS1003 Intro to Cybersecurity" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1003" data-id="CITS1003" data-course-id="CITS1003" data-content="Intro to Cybersecurity" data-post=""></div>
 					
-					<div class="item course" data-name="CITS1401 Intro to Python" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1401" data-id="CITS1401" data-course-id="CITS1401" data-content="" data-post="CITS2XXX CITS2002 CITS2200 CITS2402"></div>
+					<div class="item course" data-name="CITS1401 Intro to Python" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1401" data-id="CITS1401" data-course-id="CITS1401" data-content="Intro to Python" data-post="CITS2XXX CITS2002 CITS2402"></div>
 					
-					<div class="item course" data-name="MATH1721 Maths Foundations" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="MATH1721" data-id="MATH1721" data-course-id="MATH1721" data-content="" data-post="cits2211"></div>
+					<div class="item course" data-name="MATH1721 Maths Foundations" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="MATH1721" data-id="MATH1721" data-course-id="MATH1721" data-content="Maths Foundations" data-post="cits2211"></div>
 					
 				
 					</td>
 					<td id="sem2" data-semester="2">
 					
-					<div class="item course" data-name="CITS1401 Intro to Python" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1401" data-id="CITS1401" data-course-id="CITS1401" data-content="" data-post="CITS2XXX CITS2002 CITS2200 CITS2402"></div>
+					<div class="item course" data-name="CITS1401 Intro to Python" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1401" data-id="CITS1401" data-course-id="CITS1401" data-content="Intro to Python" data-post="CITS2XXX CITS2002 CITS2402"></div>
 
-					<div class="item course" data-name="CITS1402 Database" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1402" data-id="CITS1402" data-course-id="CITS1402" data-content="" data-post="CITS3401 CITS5504"></div>
+					<div class="item course" data-name="CITS1402 Database" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS1402" data-id="CITS1402" data-course-id="CITS1402" data-content="Database Management" data-post="CITS3401 CITS5504"></div>
 					
-					<div class="item course" data-name="MATH1721 Maths Foundations" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="MATH1721" data-id="MATH1721" data-course-id="MATH1721" data-content="" data-post="cits2211"></div>
+					<div class="item course" data-name="MATH1721 Maths Foundations" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="MATH1721" data-id="MATH1721" data-course-id="MATH1721" data-content="Maths Foundations" data-post="cits2211"></div>
 					
 										
 					</td>
 					<td id="sem3" data-semester="3">
 					
-					<div class="item course" data-name="CITS2XXX SE with Java" data-credits-min="6" data-credits-max="6" data-pre="CITS1401" data-co="" data-label="CITS2XXX" data-id="CITS2XXX" data-course-id="CITS2XXX" data-content="Software Engineering with Java" data-post="CITS3003 CITS2002 CITS4401"></div>
+					<div class="item course" data-name="CITS2XXX SE with Java" data-credits-min="6" data-credits-max="6" data-pre="CITS1401" data-co="" data-label="CITS2XXX" data-id="CITS2XXX" data-course-id="CITS2XXX" data-content="CITS2XXX SE with Java" data-post="CITS3003 CITS2002 CITS4401"></div>
 									
-					<div class="item course" data-name="CITS2003 Scripting" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS2003" data-id="CITS2003" data-course-id="CITS2003" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS2003 Scripting" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS2003" data-id="CITS2003" data-course-id="CITS2003" data-content="Scripting and Tools" data-post=""></div>
 					
-					<div class="item course" data-name="CITS2200 DSA" data-credits-min="6" data-credits-max="6" data-pre="CITS1401" data-co="" data-label="CITS2200" data-id="CITS2200" data-course-id="CITS2200" data-content="" data-post="CITS3001 CITS3005"></div>
+					<div class="item course" data-name="CITS2200 DSA" data-credits-min="6" data-credits-max="6" data-pre="CITS1001" data-co="" data-label="CITS2200" data-id="CITS2200" data-course-id="CITS2200" data-content="Data Structures and Algorithms" data-post="CITS3001 CITS3005"></div>
+					
+					<div class="item course" data-name="CITS2401 CAV" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS2401" data-id="CITS2401" data-course-id="CITS2401" data-content="Computer Analysis and Visualisation" data-post=""></div>
 					
 					</td>
 					<td id="sem4" data-semester="4">
 					
-					<div class="item course" data-name="CITS2002 Systems Programming" data-credits-min="6" data-credits-max="6" data-pre="CITS1401" data-co="" data-label="CITS2002" data-id="CITS2002" data-course-id="CITS2002" data-content="" data-post="CITS3002"></div>
+					<div class="item course" data-name="CITS2002 Systems Programming" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401" data-label="CITS2002" data-id="CITS2002" data-course-id="CITS2002" data-content="Systems Programming" data-post="CITS3002"></div>
 					
-					<div class="item course" data-name="CITS2211 Discrete Structures" data-credits-min="6" data-credits-max="6" data-pre="MATH1721" data-co="" data-label="CITS2211" data-id="CITS2211" data-course-id="CITS2211" data-content="" data-post="CITS3005"></div>
+					<div class="item course" data-name="CITS2211 Discrete Structures" data-credits-min="6" data-credits-max="6" data-pre="MATH1721" data-co="" data-label="CITS2211" data-id="CITS2211" data-course-id="CITS2211" data-content="Discrete Structures" data-post="CITS3005"></div>
 					
-					<div class="item course" data-name="CITS2402 Intro to DS" data-credits-min="6" data-credits-max="6" data-pre="CITS1401" data-co="" data-label="CITS2402" data-id="CITS2402" data-course-id="CITS2402" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS2401 CAV" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS2401" data-id="CITS2401" data-course-id="CITS2401" data-content="Computer Analysis and Visualisation" data-post=""></div>
+					
+					<div class="item course" data-name="CITS2402 Intro to DS" data-credits-min="6" data-credits-max="6" data-pre="CITS1401" data-co="" data-label="CITS2402" data-id="CITS2402" data-course-id="CITS2402" data-content="Intro to DS" data-post=""></div>
 			
 					
 					</td>
 					<td id="sem5" data-semester="5">
 					
-					<div class="item course" data-name="CITS3002 Networks" data-credits-min="6" data-credits-max="6" data-pre="CITS2002" data-co="" data-label="CITS3002" data-id="CITS3002" data-course-id="CITS3002" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3002 Networks" data-credits-min="6" data-credits-max="6" data-pre="CITS2002" data-co="" data-label="CITS3002" data-id="CITS3002" data-course-id="CITS3002" data-content="Computer Networks" data-post=""></div>
 					
-					<div class="item course" data-name="CITS3003 Graphics" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS2002" data-label="CITS3003" data-id="CITS3003" data-course-id="CITS3003" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3003 Graphics" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS2002" data-label="CITS3003" data-id="CITS3003" data-course-id="CITS3003" data-content="" data-post=""></div>
+					
+					<div class="item course" data-name="CITS3201 Soft. Req and Design" data-credits-min="6" data-credits-max="6" data-pre="CITS1001" data-co="" data-label="CITS3201" data-id="CITS3201" data-course-id="CITS3201" data-content="" data-post=""></div>
 					
 					<div class="item course" data-name="CITS3401 Data Warehousing" data-credits-min="6" data-credits-max="6" data-pre="CITS1402" data-co="" data-label="CITS3401" data-id="CITS3401" data-course-id="CITS3401" data-content="" data-post=""></div>
 					
-					<div class="item course" data-name="CITS3403 Agile Web" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS3403" data-id="CITS3403" data-course-id="CITS3403" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3403 Agile Web" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS3403" data-id="CITS3403" data-course-id="CITS3403" data-content="" data-post=""></div>
 					
 					
 					
 					</td>
 					<td id="sem6" data-semester="6">
 					
-					<div class="item course" data-name="CITS3001 Algorithms" data-credits-min="6" data-credits-max="6" data-pre="CITS2200" data-co="" data-label="CITS3001" data-id="CITS3001" data-course-id="CITS3001" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3001 Algorithms" data-credits-min="6" data-credits-max="6" data-pre="CITS2200" data-co="" data-label="CITS3001" data-id="CITS3001" data-course-id="CITS3001" data-content="AI and Algorithms" data-post=""></div>
 					
-					<div class="item course" data-name="CITS3005 Knowledge Rep" data-credits-min="6" data-credits-max="6" data-pre="CITS2200 CITS2211" data-co="" data-label="CITS3005" data-id="CITS3005" data-course-id="CITS3005" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3005 Knowledge Rep" data-credits-min="6" data-credits-max="6" data-pre="CITS2200 CITS2211" data-co="" data-label="CITS3005" data-id="CITS3005" data-course-id="CITS3005" data-content="Knowledge Representations" data-post=""></div>
 					
-					<div class="item course" data-name="CITS3006 Pen Testing" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS3006" data-id="CITS3006" data-course-id="CITS3006" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3006 Pen Testing" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS3006" data-id="CITS3006" data-course-id="CITS3006" data-content="Penetration Testing" data-post=""></div>
 					
-					<div class="item course" data-name="CITS3007 Secure Coding" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS3007" data-id="CITS3007" data-course-id="CITS3007" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3007 Secure Coding" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS3007" data-id="CITS3007" data-course-id="CITS3007" data-content="Secure Coding" data-post=""></div>
 					
-					<div class="item course" data-name="CITS3200 Prof. Computing" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS3200" data-id="CITS3200" data-course-id="CITS3200" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS3200 Prof. Computing" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS3200" data-id="CITS3200" data-course-id="CITS3200" data-content="Professional Computing. Requires minimum 84 points, including 6 points programming and 6 points DSA (check)" data-post=""></div>
 					
 					
 					</td>
 					<td id="sem7" data-semester="7">
 					
-					<div class="item course" data-name="CITS4012 NLP" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS4012" data-id="CITS4012" data-course-id="CITS4012" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4012 NLP" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS4012" data-id="CITS4012" data-course-id="CITS4012" data-content="Natural Language Processing" data-post=""></div>
 					
-					<div class="item course" data-name="CITS4401 Soft. Req and Design" data-credits-min="6" data-credits-max="6" data-pre="CITS2XXX" data-co="" data-label="CITS4401" data-id="CITS4401" data-course-id="CITS4401" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4401 Soft. Req and Design" data-credits-min="6" data-credits-max="6" data-pre="CITS1001" data-co="" data-label="CITS4401" data-id="CITS4401" data-course-id="CITS4401" data-content="Software Requirements and Design" data-post=""></div>
 					
-					<div class="item course" data-name="CITS4402 Computer Vision" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4402" data-id="CITS4402" data-course-id="CITS4402" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4402 Computer Vision" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4402" data-id="CITS4402" data-course-id="CITS4402" data-content="Computer Vision" data-post=""></div>
 					
-					<div class="item course" data-name="CITS4404 AI" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS4404" data-id="CITS4404" data-course-id="CITS4404" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4404 AI" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS4404" data-id="CITS4404" data-course-id="CITS4404" data-content="Artificial Intelligence" data-post=""></div>
 					
-					<div class="item course" data-name="CITS4419 Mobile and Wireless" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4419" data-id="CITS4419" data-course-id="CITS4419" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4419 Mobile and Wireless" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4419" data-id="CITS4419" data-course-id="CITS4419" data-content="Mobile and Wireless Network" data-post=""></div>
 					
 					</td>
 					<td id="sem8" data-semester="8">
 					
-					<div class="item course" data-name="CITS4009 Comp. Data Analysis" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4009" data-id="CITS4009" data-course-id="CITS4009" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4009 Comp. Data Analysis" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4009" data-id="CITS4009" data-course-id="CITS4009" data-content="Computational Data Analysis" data-post=""></div>
 					
-					<div class="item course" data-name="CITS4403 Comp. Modelling" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4403" data-id="CITS4403" data-course-id="CITS4403" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS4403 Comp. Modelling" data-credits-min="6" data-credits-max="6" data-pre="" data-co="" data-label="CITS4403" data-id="CITS4403" data-course-id="CITS4403" data-content="Computational Modelling" data-post=""></div>
 					
 					</td>
 					<td id="sem9" data-semester="9">
 					
-					<div class="item course" data-name="CITS5501 Software Testing and QA" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS5501" data-id="CITS5501" data-course-id="CITS5501" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5501 Software Testing and QA" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS5501" data-id="CITS5501" data-course-id="CITS5501" data-content="Software Testing and Quality Assurance" data-post=""></div>
 					
-					<div class="item course" data-name="CITS5504 Data Warehousing" data-credits-min="6" data-credits-max="6" data-pre="CITS1402" data-co="" data-label="CITS5504" data-id="CITS5504" data-course-id="CITS5504" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5504 Data Warehousing" data-credits-min="6" data-credits-max="6" data-pre="CITS1402" data-co="" data-label="CITS5504" data-id="CITS5504" data-course-id="CITS5504" data-content="Data Warehousing" data-post=""></div>
 					
-					<div class="item course" data-name="CITS5505 Agile Web" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS5505" data-id="CITS5505" data-course-id="CITS5505" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5505 Agile Web" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS5505" data-id="CITS5505" data-course-id="CITS5505" data-content="Agile Web Development" data-post=""></div>
 					
-					<div class="item course" data-name="CITS5508 ML" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS5508" data-id="CITS5508" data-course-id="CITS5508" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5508 ML" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS5508" data-id="CITS5508" data-course-id="CITS5508" data-content="Machine Learning" data-post=""></div>
 					
 					</td>
 					<td id="sem10" data-semester="10">
 					
-					<div class="item course" data-name="CITS5503 Cloud Computing" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS5503" data-id="CITS5503" data-course-id="CITS5503" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5503 Cloud Computing" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS5503" data-id="CITS5503" data-course-id="CITS5503" data-content="Cloud Computing" data-post=""></div>
 					
-					<div class="item course" data-name="CITS5506 IoT" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS5506" data-id="CITS5506" data-course-id="CITS5506" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5506 IoT" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS5506" data-id="CITS5506" data-course-id="CITS5506" data-content="Internet of Things" data-post=""></div>
 					
-					<div class="item course" data-name="CITS5507 HPC" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS2XXX CITS1401 CITS2002" data-label="CITS5507" data-id="CITS5507" data-course-id="CITS5507" data-content="" data-post=""></div>
+					<div class="item course" data-name="CITS5507 HPC" data-credits-min="6" data-credits-max="6" data-pre="" data-co="CITS1001 CITS1401 CITS2002" data-label="CITS5507" data-id="CITS5507" data-course-id="CITS5507" data-content="High Performance Computing" data-post=""></div>
 					
 					
 					<!--
