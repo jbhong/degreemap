@@ -1,12 +1,15 @@
 //var UIUCURL = "https://courses.illinois.edu/schedule/DEFAULT/DEFAULT/DEPARTMENT/COURSE";
-var UWAURL = "https://handbooks.uwa.edu.au/unitdetails?clearc=1&code=DEPARTMENTCOURSE";
+var UWAURL = "https://handbooks.uwa.edu.au/unitdetails?clearc=1&code=COURSE";
+var COURSEURL = "https://www.uwa.edu.au/study/courses/CODE";
+const DEGREEID = ["computer-science", "data-science", "cybersecurity", "international-cybersecurity", "computing-and-data-science", "artificial-intelligence", "software-engineering"];
+const DEGREENAME = ["BSC CS", "BSC DS", "BSC Cyber", "BACS Cyber", "BACS CDS", "BACS AI", "BE(HON) SW"];
 
 function clearTable() {
 	jQuery("#flowsheet table .prereq").removeClass("prereq");
 	jQuery("#flowsheet table .coreq").removeClass("coreq");
 	jQuery("#flowsheet table .postreq").removeClass("postreq");
 	jQuery("#flowsheet table .immediate").removeClass("immediate");
-	jQuery("#flowsheet table .degree").removeClass("degree");
+	jQuery("#flowsheet table .degreereq").removeClass("degreereq");
 }
 
 function determinePostreqs(course_id) {
@@ -16,7 +19,13 @@ function determinePostreqs(course_id) {
 	jQuery("[data-pre~='" + course + "'], [data-co~='" + course + "']").each(function (i, e) {
 		var current = objCourse.attr("data-post");
 		var newpost = current + " " + jQuery(this).attr("data-id");
-		jQuery("div[data-id='" + course + "']").attr("data-post", newpost)
+		
+		if (DEGREEID.includes(newpost)) {
+
+		}
+		else {
+			jQuery("div[data-id='" + course + "']").attr("data-post", newpost)
+		}
 	});
 }
 
@@ -30,22 +39,19 @@ function traverseReqs(course, direction, otherclass) {
 			crs = reqarr[x];
 				
 			if (otherclass !== undefined) jQuery("div[data-id='" + crs + "']").addClass(otherclass);
-				
-			if (jQuery("div[data-id='" + crs + "']").hasClass(direction + "req")) {
 
+			jQuery("div[data-id='" + crs + "']").addClass(direction + "req");
+			if (direction == "co") {
+					
+				traverseReqs(crs, "pre");
 			}
 			else {
-				jQuery("div[data-id='" + crs + "']").addClass(direction + "req");
-				if (direction == "co") {
-					traverseReqs(crs, "pre");
-				}
-				else {
-					traverseReqs(crs, direction);
-				}
+				traverseReqs(crs, direction);
 			}
 		}
 	}
 }
+
 
 function addCourseTitle(course_id) {
 	var myClass = jQuery("div[data-course-id='" + course_id + "']");
@@ -65,13 +71,17 @@ function addCourseTitle(course_id) {
 	}
 
 	// get link to campus course profile page
-	var len = course.length;
-	var dept = course.substr(0, len - 3);
-	var crs = course.substr(len - 3, 3);
-	var location = UWAURL.replace("DEPARTMENT", dept).replace("COURSE", crs);
-
-	var text = "<div class='rubric'>" + label + credits + "</div><div class='crs_title'><a href='" + location + "' target='_blank'>" + name + "</a></div>";
-	text += "<div class='offscreen'>" + desc + "</div>";
+	var location = UWAURL.replace("COURSE", course);
+	var degree = COURSEURL.replace("CODE", course);
+	
+	if (DEGREENAME.includes(label)) {
+		var text = "<div class='rubric'>" + label + "</div><div class='crs_title'><a href='" + degree + "' target='_blank'>" + name + "</a></div>";
+		text += "<div class='offscreen'>" + desc + "</div>";
+	}
+	else {
+		var text = "<div class='rubric'>" + label + credits + "</div><div class='crs_title'><a href='" + location + "' target='_blank'>" + name + "</a></div>";
+		text += "<div class='offscreen'>" + desc + "</div>";
+	}
 	myClass.html(text);
 }
 
@@ -199,6 +209,7 @@ jQuery(document).ready(function() {
 			traverseReqs(course, "pre", "immediate");
 			traverseReqs(course, "post");
 			traverseReqs(course, "co");
+			traverseReqs(course, "degree", "immediate");
 		}
 		else {
 			jQuery("#coursecontent").html("");
