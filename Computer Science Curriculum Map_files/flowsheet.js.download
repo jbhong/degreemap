@@ -75,11 +75,11 @@ function addCourseTitle(course_id) {
 	var degree = COURSEURL.replace("CODE", course);
 	
 	if (DEGREENAME.includes(label)) {
-		var text = "<div class='rubric'>" + "</div><div class='crs_title'><a href='" + degree + "' target='_blank'>" + name + "</a></div>";
+		var text = "<div class='rubric'>" + label + "</div><div class='crs_title'><a href='" + degree + "' target='_blank'>" + name + "</a></div>";
 		text += "<div class='offscreen'>" + desc + "</div>";
 	}
 	else {
-		var text = "<div class='rubric'>" + "</div><div class='crs_title'><a href='" + location + "' target='_blank'>" + name + "</a></div>";
+		var text = "<div class='rubric'>" + label + credits + "</div><div class='crs_title'><a href='" + location + "' target='_blank'>" + name + "</a></div>";
 		text += "<div class='offscreen'>" + desc + "</div>";
 	}
 	myClass.html(text);
@@ -101,10 +101,10 @@ function addElectiveTitle(course_id) {
 	}
 
 	if (url) {
-		var text = "<div class='rubric'>" + "</div><div class='crs_title'><a href='" + url + "' target='_blank'>" + name + "</a></div>";
+		var text = "<div class='rubric'>" + course + credits + "</div><div class='crs_title'><a href='" + url + "' target='_blank'>" + name + "</a></div>";
 	}
 	else {
-		var text = "<div class='rubric'>" + "</div><div class='crs_title'>" + name + "</div>";
+		var text = "<div class='rubric'>" + course + credits + "</div><div class='crs_title'>" + name + "</div>";
 	}
 
 	myClass.html(text);
