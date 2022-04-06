@@ -71,6 +71,9 @@ function addCourseTitle(course_id) {
 	}
 
 	// get link to campus course profile page
+	if (course.endsWith("-2")) {
+		course = course.slice(0,8);
+	}
 	var location = UWAURL.replace("COURSE", course);
 	var degree = COURSEURL.replace("CODE", course);
 	
